@@ -1,0 +1,34 @@
+
+
+.showcase {
+    background-color: #ddd;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase-box {
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-box img{
+    height: 15em;
+    width: 15em;
+    margin: 2em;
+}
+
+.showcase p {
+    
+    padding: 3em;
+}
+.showcase h1 {
+    text-align: center;
+    padding: 2em;
+}

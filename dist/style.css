@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #151515;
+    --secondary: #ECFFF8;
+    --light: #eee;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    background-image: url(img/night-sky.jpg);   
+}
+
+.bottom {
+    background-image: url(img/night-sky.jpg);   
+}
+
+
+.navbar {
+    
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    padding: 1em;
+    color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--secondary);
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.intro {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    justify-content: space-around;
+    
+
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.left-intro {
+    max-width: 40%;
+    padding: 2em;
+    color: var(--secondary);
+    font-size: 1.2em;
+}
+
+.left-intro h1 {
+    font-size: 3.5em;
+    margin: 0 .2em .5em;
+}
+
+.right-intro {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+.btn-intro {
+    padding: .5em;
+    margin: .5em;
+
+}
+
+.btn-intro a {
+    text-decoration: none;
+    padding: 1.8em;
+    font-weight: bold;
+}
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+  }
+  
+  .arrows path {
+    stroke: var(--secondary);
+    fill: transparent;
+    stroke-width: 1px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow 
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; 
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; 
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; 
+  }
+
+
+
+/* ------------------------ */
+/* --------- About ---------*/
+/* ------------------------ */
+
+
+
+.about {
+    background-color: #eee;
+    height: 60vh;
+}
+
+.about-intro  {
+    text-align: center;
+}
+
+.about-intro h4 {
+  padding-top: 2em;
+  padding-bottom: .5em;
+}
+
+
+
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 3em;
+}
+
+.about-left {
+    max-width: 40%;
+}
+
+.about-left p {
+    text-align: left;
+}
+
+.about-right {
+    max-width: 40%;
+    
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+  border-style: solid;
+  border-radius: 5px;
+  background-color: #ddd;
+  border-width: 1px;
+  margin: .3em;
+  padding: .1em;
+}
+
+/* --------------------------- */
+/* --------- Projects ---------*/
+/* --------------------------- */
+
+.projects {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-intro {
+    text-align: center;
+}
+
+.project-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+.project-box {
+    max-width: 70%;
+    padding: 1em;
+    margin: 2em;
+    text-align: center;
+    border: #111;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+.project-box img {
+    height: 100px;
+    width: 100px;
+}
+
+.project-box button a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.project-box button {
+    background-color: #6E75A8;
+    width: 80%;
+    margin-top: 1em;
+    border-radius: 5px;
+    
+}
+
+
+/* --------------------------- */
+/* --------- Contact --------- */
+/* --------------------------- */
+
+
+.contact {
+    background: url(img/night-sky.jpg);
+    
+}
+
+.contact {
+    
+    padding-top: 2rem;
+    min-height: 40em;
+}
+  
+  .contact h2 {
+    text-align: center;
+    color: var(--secondary);
+    padding-bottom: 2rem;
+  }
+  
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    background-color: #ddd;
+  }
+  
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-field {
+    width: 97%;
+    
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary);
+    font-size: 0.875rem;
+    outline: none;
+  }
+  
+  .input-field {
+    background-color: var(--secondary);
+  }
+  
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #105031;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+  }
+  .submit-btn2 {
+    width: 20%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: 0.3s;
+  }
+  
+  .submit-btn2:hover {
+    background-color: #105031;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+  }
+  
+  /* ---------------- */
+  /* -----Footer----- */
+  /* ---------------- */
+
+
+  .footer {
+    background: transparent;
+    padding: 3rem 0;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: var(--secondary);
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    /* padding: 2em; */
+  }
+  
+  .footer li {
+    font-size: 1.05em;
+    margin: 0.2em;
+  }
+
+  .footer .social {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .social a {
+    margin: 0 10px;
+    color: var(--secondary);
+  }
+  
+  .footer h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0.8em;
+    color: var(--secondary);
+  }
+  
+  .footer p {
+    color: var(--secondary);
+  }
+
+  .footer .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.footer .links ul li {
+  display: inline;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
