@@ -5,13 +5,16 @@
 
 :root {
     --primary: #151515;
-    --secondary: #ECFFF8;
-    --light: #eee;
+    --secondary: #c0c7d8;
+    --light: #d9dde8;
+    --secondary-light: #fff;
+    --dark: #b3bcd0;
     
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .btn {
@@ -20,13 +23,25 @@ body {
 }
 
 .top {
-    background-image: url(img/night-sky.jpg);   
+    background: url(img/night-sky.jpg);   
+    
 }
+
+
 
 .bottom {
-    background-image: url(img/night-sky.jpg);   
+    background: url(img/night-sky.jpg); 
+    
+
 }
 
+
+
+
+
+/* ---------------------- */
+/* --------Navbar-------- */
+/* ---------------------- */
 
 .navbar {
     
@@ -39,14 +54,29 @@ body {
 .navbar .logo {
     font-size: 1.5em;
     padding: 1em;
-    color: var(--secondary);
+    color: var(--secondary-light);
     font-family: 'Roboto', sans-serif;
+    
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.navbar .logo a:hover {
+  color: var(--dark);
 }
 
 .nav-btn {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.nav-btn a:hover {
+  transition: .3s;
+  color:var(--dark);
 }
 
 .navbar ul {
@@ -58,7 +88,7 @@ body {
 .navbar li a {
     text-decoration: none;
     list-style-type: none;
-    color: var(--secondary);
+    color: var(--secondary-light);
     padding: 2em;
     font-size: 1.5em;
 }
@@ -83,7 +113,7 @@ body {
 .left-intro {
     max-width: 40%;
     padding: 2em;
-    color: var(--secondary);
+    color: var(--secondary-light);
     font-size: 1.2em;
 }
 
@@ -104,14 +134,33 @@ body {
 .btn-intro {
     padding: .5em;
     margin: .5em;
-
+    background:transparent;    
+    border-radius: 5px;
+    border: 1px solid var(--light);
+    
 }
+
+
+
+.btn-intro:hover {
+  transition:ease-in-out .3s;
+  transform: scale(1.03);
+  
+}
+
+
 
 .btn-intro a {
     text-decoration: none;
-    padding: 1.8em;
-    font-weight: bold;
+    background: transparent;
+    color: var(--light);
+    font-size: 1.8em;
+    padding: 0 1.2em;
 }
+
+
+
+
 
 .arrows {
     width: 60px;
@@ -170,15 +219,18 @@ body {
 
 
 .about {
-    background-color: #eee;
-    height: 60vh;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-intro  {
     text-align: center;
 }
 
-.about-intro h4 {
+.about-intro h1 {
   padding-top: 2em;
   padding-bottom: .5em;
 }
@@ -198,10 +250,11 @@ body {
 
 .about-left p {
     text-align: left;
+    line-height: 1.6em;
 }
 
 .about-right {
-    max-width: 40%;
+    max-width: 30%;
     
 }
 
@@ -213,10 +266,36 @@ body {
 .skill-box {
   border-style: solid;
   border-radius: 5px;
-  background-color: #ddd;
+  background-color: var(--secondary);
   border-width: 1px;
   margin: .3em;
   padding: .1em;
+}
+
+.about-btn button {
+  background-color: var(--dark);
+  height: 3em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  border-radius: 5px;
+  border: 1px solid var(--primary)
+}
+
+.about-btn button a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 2em;
+}
+
+.about-btn button:hover {
+  background-color: #9aa6c1;
+  cursor: pointer;
+  transition:ease-in-out .3s;
+  transform: scale(1.03);
+
+
 }
 
 /* --------------------------- */
@@ -224,7 +303,7 @@ body {
 /* --------------------------- */
 
 .projects {
-    background-color: #ddd;
+    background-color: var(--secondary-light);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,6 +312,11 @@ body {
 
 .projects-intro {
     text-align: center;
+}
+
+.projects-intro h4 {
+  padding-top: 2em;
+  padding-bottom: .5em;
 }
 
 .project-container {
@@ -251,12 +335,16 @@ body {
 .project-box {
     max-width: 70%;
     padding: 1em;
-    margin: 2em;
+    margin: 3em 2em;
     text-align: center;
-    border: #111;
+    border-color: #111;
+    border: 1px;
     border-radius: 8px;
     border-style: solid;
+    background-color: var(--light);
 }
+
+
 
 .project-box img {
     height: 100px;
@@ -265,38 +353,70 @@ body {
 
 .project-box button a {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .project-box button {
-    background-color: #6E75A8;
+    background-color: var(--dark);
+    height: 2em;
     width: 80%;
     margin-top: 1em;
     border-radius: 5px;
+    border: 1px solid var(--primary)
     
 }
 
+.project-box button:hover {
+  background-color: #9aa6c1;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.projects-btn button {
+  background-color: var(--light);
+  height: 3em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  border-radius: 5px;
+  border: 1px solid var(--primary)
+}
+
+.projects-btn button a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.2em;
+  font-weight: 300;
+  padding: 2em;
+}
+
+.projects-btn button:hover {
+  background-color: #9aa6c1;
+  cursor: pointer;
+  transition: .3s;
+
+
+}
 
 /* --------------------------- */
 /* --------- Contact --------- */
 /* --------------------------- */
 
 
-.contact {
+/* .contact {
     background: url(img/night-sky.jpg);
     
-}
+} */
 
 .contact {
     
-    padding-top: 2rem;
+    padding-top: 3rem;
     min-height: 40em;
 }
   
   .contact h2 {
     text-align: center;
-    color: var(--secondary);
-    padding-bottom: 2rem;
+    color: var(--secondary-light);
+    padding-bottom: 3rem;
   }
   
   .contact-form-container {
@@ -304,7 +424,7 @@ body {
     margin: 0 auto;
     padding: 0.938rem;
     border-radius: 5px;
-    background-color: #ddd;
+    background-color: var(--light);
   }
   
   .contact-form-container label {
@@ -324,13 +444,13 @@ body {
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
-    border: 2px outset var(--primary);
+    border: 1px outset var(--primary);
     font-size: 0.875rem;
     outline: none;
   }
   
   .input-field {
-    background-color: var(--secondary);
+    background-color: var(--secondary-light);
   }
   
   .input-field::placeholder {
@@ -342,36 +462,22 @@ body {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    background-color: var(--secondary);
-    border: 2px solid var(--primary);
+    background-color: var(--dark);
+    border: 1px solid var(--primary);
     border-radius: 5px;
     font-size: 1rem;
-    font-weight: var(--bold-font);
     transition: 0.3s;
   }
   
   .submit-btn:hover {
-    background-color: #105031;
-    border: 2px solid var(--primary);
+    background-color: #9aa6c1;
     cursor: pointer;
   }
-  .submit-btn2 {
-    width: 20%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: var(--secondary);
-    border: 2px solid var(--primary);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: 0.3s;
+
+  #myfile {
+    margin: 1em 0;
   }
   
-  .submit-btn2:hover {
-    background-color: #105031;
-    border: 2px solid var(--primary);
-    cursor: pointer;
-  }
   
   /* ---------------- */
   /* -----Footer----- */
@@ -385,7 +491,7 @@ body {
   
   .footer a {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--secondary-light);
   }
   
   .footer ul {
@@ -405,18 +511,18 @@ body {
   
   .footer .social a {
     margin: 0 10px;
-    color: var(--secondary);
+    color: var(--secondary-light);
   }
   
   .footer h1 {
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 0.8em;
-    color: var(--secondary);
+    color: var(--secondary-light);
   }
   
   .footer p {
-    color: var(--secondary);
+    color: var(--secondary-light);
   }
 
   .footer .container {

@@ -30,12 +30,12 @@
 
 
         <div class="navbar">
-            <div class="logo"><h2>CH</h2></div>
+            <div class="logo"><h2><a href="index.html">CH</a></h2></div>
             <ul class="nav-btn">
                 <li><a href="index.html">Home</a> </li>
                 <li><a href="About.html">About</a> </li>
                 <li><a href="Projects.html">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     
@@ -59,8 +59,8 @@
                 </div>
 
                 <div class="right-intro">
-                    <button class="btn-intro btn"><a href="#">Latest Projects</a></button>
-                    <button class="btn-intro btn"><a href="#">More About Me</a></button>
+                    <button class="btn-intro btn"><a href="Projects.html">Latest Projects</a></button>
+                    <button class="btn-intro btn"><a href="About.html">More About Me</a></button>
                 </div>
             
             </div>
@@ -81,15 +81,15 @@
 
     <div class="about">
         <div class="about-intro">
-            <h4>About</h4>
-            <h1>Personal Info</h1>
+            <!-- <h4>About</h4> -->
+            <h1>About Me</h1>
             <!-- <p>Get to know more about me</p> -->
         </div>
         
         <div class="about-container">
             <div class="about-left">
                 <h2>Hello!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deserunt placeat dolor officia? Distinctio non facere repudiandae consectetur. Exercitationem sit illum dignissimos impedit aspernatur placeat voluptates reprehenderit omnis nulla ipsam.</p>
+                <p><br/>My name is Chad and I'm a front end web developer who enjoys creating and building websites and applications. I'm experienced in making hand-coded websites from scratch and with React, and I'm always learning new tools and technologies. I'm passionate about learning and value growing and callaborating with other people to create awesome, great-looking projects. </p>
 
             </div>
 
@@ -100,13 +100,17 @@
                     <div class="skill-box">CSS3</div>
                     <div class="skill-box">Javascript</div>
                     <div class="skill-box">React</div>
+                    <div class="skill-box">Node.js</div>
+                    <div class="skill-box">Python</div>
                     <div class="skill-box">Git</div>
                     <div class="skill-box">Github</div>
                     <div class="skill-box">Responsive Design</div>
                 </div>
             </div>
         </div>
-        
+        <div class="about-btn">
+          <button btn><a href="About.html">More About Me</a></button>
+        </div>
 
     </div>
 
@@ -118,7 +122,6 @@
         <div class="projects-intro">
             <h4>Projects</h4>
             <h1>My Latest Projects</h1>
-            <p>Here you can find some of my latest projects.</p>
         </div>
         
         <div class="project-container">
@@ -126,7 +129,7 @@
                 <img src="/dist/img/G.png" alt="project-image">
                 <h3>Title of Project</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae dolorum obcaecati ea facere, neque eveniet maxime,</p>
-                <button><a href="Projects.html">See Live</a></button>
+                <button><a href="https://629a3f393b1a1b005c9a1a25--superlative-starship-f9ea5f.netlify.app/" target="_blank">See Live</a></button>
             </div>
             <div class="project-box">
                 <img src="/dist/img/G.png" alt="project-image">
@@ -147,25 +150,26 @@
                 <button><a href="#">See Live</a></button>
             </div>
         </div>
+        <div class="projects-btn">
+          <button btn><a href="#">More On Github</a></button>
+        </div>
     </div>
 
+    <div class="bottom">
 
-
-    <!-- ------- -->
-    <!-- Contact -->
-    <!-- ------- -->
+      <!-- ------- -->
+      <!-- Contact -->
+      <!-- ------- -->
 
     
         
 
         <section class="contact" id="contact">
-            <h4>Contact</h4>
-            <h1>Say Hello</h1>
-            <p>Submit the form below and I will get back to you as soon as possible</p>
+            
             <h2>Get In Touch With Me</h2>
             <div class="contact-form-container">
               <div class="contact-form">
-                <form>
+                <form action="POST" data-netlify="true">
                   <div class="form-control">
                     <label for="name">Name</label>
                     <input
@@ -200,6 +204,18 @@
                       required
                     ></textarea>
                   </div>
+                  <div>
+                    <input 
+                      type="file"
+                      id="myfile"
+                      placeholder="Upload file"
+                      name="myfile"                      
+                      rows="7"
+                    />
+                  </div>
+                  <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
                   <input
                     type="submit"
                     value="Submit"
@@ -211,9 +227,9 @@
             </div>
           </section>
         
-    </div>
+    
 
-    <div class="bottom">
+    
 
 
     <!-- ------ -->
@@ -245,7 +261,7 @@
 
     </div>
 
-
+  </div>
     
 </body>
 </html>

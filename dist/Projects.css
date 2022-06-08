@@ -1,20 +1,72 @@
+:root {
+    --primary: #151515;
+    --secondary: #c0c7d8;
+    --light: #d9dde8;
+    --secondary-light: #fff;
+    --dark: #b3bcd0;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.btn {
+    color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    background: url(img/night-sky.jpg);   
+    
+}
+
+
+
+.bottom {
+    background: url(img/night-sky.jpg); 
+    
+
+}
+
+.intro-projects {
+    height: 50vh;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-projects h1 {
+    color: var(--primary);
+    font-size: 4em;
+    padding: 1em 0;
+}
+
 
 
 .showcase {
-    background-color: #ddd;
+    background-color: var(--light) ;
 }
 
 .showcase-container {
     display: flex;
     flex-direction: column;
+    background-color: var(--dark);
+    align-items: center;
 }
 
 .showcase-box {
+    width: 70%;
+    border: 1px solid ;
+    border-radius: 8px;
     margin: 2em;
     padding: 2em;
     display: flex;
-    
-    justify-content: center;
+    background-color: var(--light);
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -26,9 +78,23 @@
 
 .showcase p {
     
-    padding: 3em;
+    padding: 1em;
 }
 .showcase h1 {
     text-align: center;
-    padding: 2em;
+    padding: 1em;
+}
+
+.showcase-box button {
+    background-color: var(--dark);
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    
 }
