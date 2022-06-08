@@ -320,7 +320,7 @@ body {
 }
 
 .project-container {
-    width: 60%;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -333,7 +333,8 @@ body {
 }
 
 .project-box {
-    max-width: 70%;
+    max-width: 90%;
+    height: 60%;
     padding: 1em;
     margin: 3em 2em;
     text-align: center;
@@ -342,13 +343,22 @@ body {
     border-radius: 8px;
     border-style: solid;
     background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 
 .project-box img {
-    height: 100px;
-    width: 100px;
+    height: 55%;
+    width: 90%;
+}
+
+.project-box p {
+  text-align: center;
+  margin: 0 2em;
 }
 
 .project-box button a {
