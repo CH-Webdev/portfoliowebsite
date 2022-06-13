@@ -334,7 +334,7 @@ body {
 
 .project-box {
     max-width: 90%;
-    height: 60%;
+    height: 70%;
     padding: 1em;
     margin: 3em 2em;
     text-align: center;
@@ -352,8 +352,8 @@ body {
 
 
 .project-box img {
-    height: 55%;
-    width: 90%;
+    height: 60%;
+    width: 80%;
 }
 
 .project-box p {
@@ -364,16 +364,19 @@ body {
 .project-box button a {
     text-decoration: none;
     color: var(--primary);
+    padding: 1em;
 }
 
 .project-box button {
     background-color: var(--dark);
     height: 2em;
-    width: 80%;
     margin-top: 1em;
     border-radius: 5px;
-    border: 1px solid var(--primary)
-    
+    border: 1px solid var(--primary);
+}
+
+.git-btn {
+  background-color: red;
 }
 
 .project-box button:hover {
