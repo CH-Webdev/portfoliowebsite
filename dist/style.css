@@ -18,7 +18,8 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -103,7 +104,7 @@ body {
     flex-direction: column;
     background: transparent;
     justify-content: space-around;
-    
+   
 
 }
 
@@ -214,7 +215,10 @@ body {
     -webkit-animation-delay:0s; 
   }
 
-
+  .scrolled{
+    background-color: dodgerblue;
+    transition: 0.3s;
+  }
 
 /* ------------------------ */
 /* --------- About ---------*/
@@ -277,7 +281,7 @@ body {
 }
 
 .about-btn button {
-  background-color: var(--dark);
+  background-color: #E6E9EF;
   height: 3em;
   margin-top: 1em;
   margin-bottom: 3em;
@@ -294,7 +298,7 @@ body {
 }
 
 .about-btn button:hover {
-  background-color: #9aa6c1;
+  background-color: #B3BCD0;
   cursor: pointer;
   transition:ease-in-out .3s;
   transform: scale(1.03);
@@ -374,7 +378,7 @@ body {
 }
 
 .project-box button {
-    background-color: var(--dark);
+    background-color: #87BFFF;
     height: 2em;
     margin-top: 1em;
     border-radius: 5px;
@@ -397,7 +401,7 @@ body {
 }
 
 .project-box button:hover {
-  background-color: #9aa6c1;
+  background-color: #5CA8FF;
   cursor: pointer;
   transition: .3s;
 }
